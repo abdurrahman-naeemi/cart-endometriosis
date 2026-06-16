@@ -1,0 +1,156 @@
+Last login: Wed Mar  4 09:51:23 on ttys000
+abdurrahman@Abdurrahmans-MacBook-Air ~ % cd scenv
+abdurrahman@Abdurrahmans-MacBook-Air scenv % source bin/activate
+(scenv) abdurrahman@Abdurrahmans-MacBook-Air scenv % python -c "
+import scanpy as sc
+a = sc.read_h5ad('tabula_sapiens_10pct.h5ad')
+print(a)
+print(a.obs['tissue'].value_counts().head(20))
+"
+AnnData object with n_obs × n_vars = 113611 × 60606
+    obs: 'donor_id', 'tissue_in_publication', 'anatomical_position', 'method', 'cdna_plate', 'library_plate', 'notes', 'cdna_well', 'assay_ontology_term_id', 'sample_id', 'replicate', '10X_run', 'ambient_removal', 'donor_method', 'donor_assay', 'donor_tissue', 'donor_tissue_assay', 'cell_type_ontology_term_id', 'compartment', 'broad_cell_class', 'free_annotation', 'manually_annotated', 'published_2022', 'n_genes_by_counts', 'total_counts', 'total_counts_mt', 'pct_counts_mt', 'total_counts_ercc', 'pct_counts_ercc', '_scvi_batch', '_scvi_labels', 'scvi_leiden_donorassay_full', 'ethnicity_original', 'sample_number', 'suspension_type', 'tissue_type', 'tissue_ontology_term_id', 'disease_ontology_term_id', 'is_primary_data', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid'
+    var: 'ensembl_id', 'genome', 'mt', 'ercc', 'n_cells_by_counts', 'mean_counts', 'pct_dropout_by_counts', 'total_counts', 'mean', 'std', 'feature_is_filtered', 'feature_name', 'feature_reference', 'feature_biotype', 'feature_length', 'feature_type'
+tissue
+lymph node                     10229
+blood                           8534
+spleen                          6996
+lung                            6568
+bladder organ                   6563
+thymus                          4328
+brown adipose tissue            4197
+muscle of abdomen               3460
+mammary gland                   3129
+adipose tissue                  3078
+left ovary                      2699
+bone marrow                     2697
+subcutaneous adipose tissue     2340
+posterior part of tongue        2306
+trachea                         2294
+parotid gland                   2261
+aorta                           2231
+liver                           2212
+prostate gland                  2133
+inguinal lymph node             2046
+Name: count, dtype: int64
+(scenv) abdurrahman@Abdurrahmans-MacBook-Air scenv % python safety_profile.py
+Loading Tabula Sapiens...
+  113,611 cells x 60,606 genes
+  Tissues: 75
+
+Looking for target genes: ['GAS1', 'BST2']
+  ✗ GAS1 NOT FOUND in Tabula Sapiens
+  ✗ BST2 NOT FOUND in Tabula Sapiens
+
+WARNING: ['GAS1', 'BST2'] not found. Check gene name format.
+Available gene name examples: ['ENSG00000000003', 'ENSG00000000005', 'ENSG00000000419', 'ENSG00000000457', 'ENSG00000000460', 'ENSG00000000938', 'ENSG00000000971', 'ENSG00000001036', 'ENSG00000001084', 'ENSG00000001167']
+Traceback (most recent call last):
+  File "/Users/abdurrahman/scenv/safety_profile.py", line 74, in <module>
+    raise ValueError("No target genes found. Check gene names.")
+ValueError: No target genes found. Check gene names.
+(scenv) abdurrahman@Abdurrahmans-MacBook-Air scenv % python safety_profile.py
+Loading Tabula Sapiens...
+  113,611 cells x 60,606 genes
+  Tissues: 75
+
+Looking for target genes...
+  ✓ GAS1 (ENSG00000180447)
+  ✓ BST2 (ENSG00000130303)
+
+Checking normalisation...
+  Already normalised (max=8.28)
+
+Extracting expression...
+  GAS1: mean=0.0976, max=4.06
+  BST2: mean=0.4159, max=5.77
+
+Computing per-tissue rates...
+
+=================================================================
+  HUMAN SAFETY PROFILE — GAS1 + BST2
+=================================================================
+  Threshold: >0.5 normalised counts per 10k
+  CAR-T fires only when BOTH genes co-expressed
+
+  Tissue                                    CoExpr%  Flag
+  ------------------------------------------------------------
+  right ovary                                15.55%  WARNING
+  left ovary                                 13.34%  WARNING
+  adipose tissue                             10.69%  WARNING
+  thoracic aorta                              6.91%  SAFE
+  aorta                                       6.50%  SAFE
+  ovary                                       6.21%  SAFE
+  heart right ventricle                       6.02%  CRITICAL
+  muscle of abdomen                           5.35%  SAFE
+  subcutaneous adipose tissue                 5.17%  SAFE
+  stomach smooth muscle                       4.98%  SAFE
+  brown adipose tissue                        4.93%  SAFE
+  stomach                                     4.08%  SAFE
+  utricle of membranous labyrinth             4.05%  SAFE
+  thymus                                      3.97%  SAFE
+  heart                                       3.43%  SAFE
+  coronary artery                             3.30%  SAFE
+  buccal mucosa                               2.86%  SAFE
+  right cardiac atrium                        2.81%  SAFE
+  muscle of pelvic diaphragm                  2.66%  SAFE
+  crista ampullaris                           2.18%  SAFE
+  prostate gland                              2.02%  SAFE
+  vasculature                                 1.75%  SAFE
+  submandibular gland                         1.31%  SAFE
+  sclera                                      1.30%  SAFE
+  large intestine                             1.27%  SAFE
+  exocrine pancreas                           1.25%  SAFE
+  myometrium                                  1.19%  SAFE
+  cardiac atrium                              1.03%  SAFE
+  eye                                         1.01%  SAFE
+  trachea                                     0.83%  SAFE
+  cardiac ventricle                           0.82%  SAFE
+  bladder organ                               0.72%  SAFE
+  parotid gland                               0.71%  SAFE
+  ascending colon                             0.69%  SAFE
+  lacrimal gland                              0.60%  SAFE
+  ileum                                       0.49%  SAFE
+  sigmoid colon                               0.45%  SAFE
+  eyelid                                      0.38%  SAFE
+  anterior segment of eyeball                 0.35%  SAFE
+  liver                                       0.32%  SAFE
+  mammary gland                               0.32%  SAFE
+  lung                                        0.30%  SAFE
+  mucosa of stomach                           0.28%  SAFE
+  cornea                                      0.28%  SAFE
+  sublingual gland                            0.26%  SAFE
+  posterior part of tongue                    0.26%  SAFE
+  endometrium                                 0.19%  SAFE
+  small intestine                             0.18%  SAFE
+  bone marrow                                 0.15%  SAFE
+  inguinal lymph node                         0.15%  SAFE
+  spleen                                      0.11%  SAFE
+  lymph node                                  0.11%  SAFE
+  duodenum                                    0.10%  SAFE
+  kidney                                      0.09%  SAFE
+  blood                                       0.08%  SAFE
+  tongue                                      0.00%  SAFE
+  testis                                      0.00%  SAFE
+  conjunctiva                                 0.00%  SAFE
+  uterus                                      0.00%  SAFE
+  cortex of kidney                            0.00%  SAFE
+  anterior part of tongue                     0.00%  SAFE
+  chorioretinal region                        0.00%  SAFE
+  skin of body                                0.00%  SAFE
+  skin of chest                               0.00%  SAFE
+  mesenteric lymph node                       0.00%  SAFE
+  skin of abdomen                             0.00%  SAFE
+  endocrine pancreas                          0.00%  SAFE
+  inferior vena cava                          0.00%  SAFE
+  retinal neural layer                        0.00%  SAFE
+  jejunum                                     0.00%  SAFE
+  posterior segment of eyeball                0.00%  SAFE
+  left coronary artery                        0.00%  SAFE
+  ocular surface region                       0.00%  SAFE
+  muscularis mucosae of stomach               0.00%  SAFE
+  abdominal aorta                             0.00%  SAFE
+=================================================================
+2026-03-04 11:47:20.897 Python[11535:338161] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /var/folders/10/qnyyp9rd3lx04cp5n2j5qy2h0000gn/T/org.python.python.savedState
+
+Plot saved → ./safety_outputs/safety_profile.png
+Share safety_profile.png and safety_report.csv with Haziq.
+(scenv) abdurrahman@Abdurrahmans-MacBook-Air scenv % 

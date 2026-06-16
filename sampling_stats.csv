@@ -1,0 +1,201 @@
+donor,tissue,available,sampled
+TSP1,bladder organ,14498,6000
+TSP1,blood,4448,4448
+TSP1,endocrine pancreas,1221,1221
+TSP1,exocrine pancreas,5821,5821
+TSP1,lung,16484,6000
+TSP1,muscle of abdomen,4035,4035
+TSP10,adipose tissue,7304,6000
+TSP10,blood,4360,4360
+TSP10,skin of abdomen,386,386
+TSP10,skin of body,5545,5545
+TSP10,skin of chest,394,394
+TSP10,subcutaneous adipose tissue,7134,6000
+TSP11,bone marrow,2552,2552
+TSP12,cardiac atrium,8539,6000
+TSP12,cardiac ventricle,3508,3508
+TSP13,bone marrow,461,461
+TSP14,abdominal aorta,276,276
+TSP14,adipose tissue,4532,4532
+TSP14,anterior part of tongue,4734,4734
+TSP14,bladder organ,3686,3686
+TSP14,blood,20303,6000
+TSP14,bone marrow,11925,6000
+TSP14,coronary artery,5878,5878
+TSP14,heart,138,138
+TSP14,inferior vena cava,255,255
+TSP14,inguinal lymph node,458,458
+TSP14,large intestine,9931,6000
+TSP14,left coronary artery,237,237
+TSP14,liver,7025,6000
+TSP14,lung,12999,6000
+TSP14,lymph node,30643,6000
+TSP14,mesenteric lymph node,129,129
+TSP14,muscle of abdomen,6242,6000
+TSP14,muscle of pelvic diaphragm,2373,2373
+TSP14,parotid gland,11687,6000
+TSP14,posterior part of tongue,4744,4744
+TSP14,prostate gland,3994,3994
+TSP14,skin of abdomen,1960,1960
+TSP14,skin of chest,2229,2229
+TSP14,small intestine,10981,6000
+TSP14,spleen,21463,6000
+TSP14,subcutaneous adipose tissue,4113,4113
+TSP14,sublingual gland,7246,6000
+TSP14,thoracic aorta,216,216
+TSP14,thymus,19889,6000
+TSP14,trachea,329,329
+TSP14,vasculature,2915,2915
+TSP15,chorioretinal region,87,87
+TSP15,cornea,3593,3593
+TSP15,eye,47,47
+TSP15,ocular surface region,39,39
+TSP15,retinal neural layer,721,721
+TSP15,sclera,1561,1561
+TSP17,liver,2114,2114
+TSP19,liver,7888,6000
+TSP2,adipose tissue,115,115
+TSP2,aorta,9304,6000
+TSP2,ascending colon,1949,1949
+TSP2,bladder organ,11486,6000
+TSP2,blood,12949,6000
+TSP2,bone marrow,4129,4129
+TSP2,cardiac ventricle,303,303
+TSP2,cortex of kidney,152,152
+TSP2,duodenum,4028,4028
+TSP2,inguinal lymph node,665,665
+TSP2,jejunum,620,620
+TSP2,kidney,11224,6000
+TSP2,large intestine,456,456
+TSP2,lung,24648,6000
+TSP2,lymph node,10343,6000
+TSP2,muscle of abdomen,12498,6000
+TSP2,muscle of pelvic diaphragm,6476,6000
+TSP2,sigmoid colon,2517,2517
+TSP2,skin of abdomen,401,401
+TSP2,skin of chest,385,385
+TSP2,small intestine,573,573
+TSP2,spleen,8948,6000
+TSP2,subcutaneous adipose tissue,196,196
+TSP2,thymus,12907,6000
+TSP2,trachea,9577,6000
+TSP20,mucosa of stomach,1487,1487
+TSP20,muscularis mucosae of stomach,292,292
+TSP20,stomach smooth muscle,7796,6000
+TSP21,adipose tissue,14456,6000
+TSP21,anterior segment of eyeball,5419,5419
+TSP21,aorta,6881,6000
+TSP21,bladder organ,15760,6000
+TSP21,blood,14103,6000
+TSP21,bone marrow,3626,3626
+TSP21,buccal mucosa,302,302
+TSP21,coronary artery,2878,2878
+TSP21,endometrium,5319,5319
+TSP21,eye,631,631
+TSP21,eyelid,7814,6000
+TSP21,heart,5316,5316
+TSP21,inguinal lymph node,9498,6000
+TSP21,lacrimal gland,6465,6000
+TSP21,lymph node,18428,6000
+TSP21,myometrium,5261,5261
+TSP21,parotid gland,1712,1712
+TSP21,posterior segment of eyeball,792,792
+TSP21,skin of body,6184,6000
+TSP21,spleen,13479,6000
+TSP21,subcutaneous adipose tissue,5681,5681
+TSP21,submandibular gland,2142,2142
+TSP21,thymus,4547,4547
+TSP21,trachea,951,951
+TSP21,utricle of membranous labyrinth,379,379
+TSP25,adipose tissue,3839,3839
+TSP25,anterior part of tongue,1740,1740
+TSP25,aorta,6018,6000
+TSP25,ascending colon,622,622
+TSP25,bladder organ,10300,6000
+TSP25,blood,3202,3202
+TSP25,bone marrow,3769,3769
+TSP25,brown adipose tissue,40619,6000
+TSP25,coronary artery,5137,5137
+TSP25,crista ampullaris,2397,2397
+TSP25,duodenum,3165,3165
+TSP25,heart,2595,2595
+TSP25,ileum,3188,3188
+TSP25,lung,11716,6000
+TSP25,lymph node,17512,6000
+TSP25,mesenteric lymph node,7854,6000
+TSP25,muscle of abdomen,1646,1646
+TSP25,muscle of pelvic diaphragm,1185,1185
+TSP25,posterior part of tongue,5406,5406
+TSP25,prostate gland,2044,2044
+TSP25,sigmoid colon,872,872
+TSP25,spleen,4105,4105
+TSP25,stomach,9212,6000
+TSP25,subcutaneous adipose tissue,5260,5260
+TSP25,sublingual gland,4303,4303
+TSP25,submandibular gland,3404,3404
+TSP25,testis,7513,6000
+TSP25,thoracic aorta,2586,2586
+TSP25,thymus,2973,2973
+TSP25,trachea,4149,4149
+TSP25,utricle of membranous labyrinth,279,279
+TSP26,ascending colon,1526,1526
+TSP26,duodenum,6136,6000
+TSP26,ileum,3579,3579
+TSP26,sigmoid colon,2296,2296
+TSP27,adipose tissue,332,332
+TSP27,anterior part of tongue,7689,6000
+TSP27,aorta,25,25
+TSP27,ascending colon,6567,6000
+TSP27,bladder organ,10655,6000
+TSP27,blood,497,497
+TSP27,bone marrow,650,650
+TSP27,brown adipose tissue,661,661
+TSP27,coronary artery,44,44
+TSP27,duodenum,6048,6000
+TSP27,exocrine pancreas,41,41
+TSP27,heart right ventricle,2255,2255
+TSP27,ileum,3718,3718
+TSP27,left ovary,6128,6000
+TSP27,lymph node,18998,6000
+TSP27,mammary gland,18539,6000
+TSP27,mucosa of stomach,5576,5576
+TSP27,muscle of abdomen,9899,6000
+TSP27,muscle of pelvic diaphragm,305,305
+TSP27,posterior part of tongue,6664,6000
+TSP27,right cardiac atrium,3178,3178
+TSP27,right ovary,966,966
+TSP27,sigmoid colon,3348,3348
+TSP27,spleen,13106,6000
+TSP27,stomach smooth muscle,8701,6000
+TSP27,subcutaneous adipose tissue,173,173
+TSP27,thymus,2413,2413
+TSP27,trachea,246,246
+TSP28,left ovary,13041,6000
+TSP28,ovary,2240,2240
+TSP28,right ovary,6510,6000
+TSP3,conjunctiva,3641,3641
+TSP3,eye,357,357
+TSP3,lacrimal gland,230,230
+TSP30,left ovary,7613,6000
+TSP30,ovary,1327,1327
+TSP30,right ovary,11126,6000
+TSP4,endometrium,4692,4692
+TSP4,mammary gland,12397,6000
+TSP4,muscle of abdomen,1051,1051
+TSP4,muscle of pelvic diaphragm,1062,1062
+TSP4,myometrium,6085,6000
+TSP4,tongue,163,163
+TSP4,uterus,672,672
+TSP5,eye,2876,2876
+TSP6,liver,5187,5187
+TSP6,trachea,7419,6000
+TSP7,anterior part of tongue,493,493
+TSP7,blood,20383,6000
+TSP7,inguinal lymph node,9704,6000
+TSP7,lymph node,4830,4830
+TSP7,parotid gland,9327,6000
+TSP7,posterior part of tongue,7121,6000
+TSP7,spleen,9347,6000
+TSP8,blood,4988,4988
+TSP8,prostate gland,14992,6000
+TSP9,exocrine pancreas,7057,6000
